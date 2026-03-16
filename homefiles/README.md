@@ -1,4 +1,4 @@
-# Homefiles - Bash Customizations
+# Homefiles - Bash Customizations Task 2
 
 ## Felix Owusu Agyemang
 
