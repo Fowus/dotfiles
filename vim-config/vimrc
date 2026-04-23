@@ -1,18 +1,28 @@
+" Disable Vi compatibility mode to enable full Vim features
 set nocompatible
+" Temporarily disable filetype detection (required by Vundle)
 filetype off
 
-" Vundle setup
+" Add Vundle to Vim's runtime path and initialize it
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Vundle manages itself
 Plugin 'VundleVim/Vundle.vim'
+" Badwolf color scheme
 Plugin 'sjl/badwolf'
+" Git integration plugin
 Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
-filetype plugin indent on
 
+" Re-enable filetype detection with plugin and indent support
+filetype plugin indent on
+" Enable syntax highlighting
 syntax on
+" Show line numbers
 set number
+" Use colors suited for a dark background
 set background=dark
+" Apply the badwolf color scheme
 colorscheme badwolf
